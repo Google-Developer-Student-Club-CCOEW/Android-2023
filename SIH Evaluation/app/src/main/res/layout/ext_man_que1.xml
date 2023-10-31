@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="344dp"
+        android:layout_height="83dp"
+        android:layout_above="@+id/ratingEditText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="129dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="52dp"
+        android:text="Que 1. Does the project solve a unique problem?"
+        android:textSize="28sp" />
+
+    <EditText
+        android:id="@+id/ratingEditText"
+        android:layout_width="350dp"
+        android:layout_height="78dp"
+        android:layout_above="@+id/nextButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="154dp"
+        android:hint="Click here to Rate from 1 to 10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="136dp"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="132dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="178dp"
+        android:text="Next" />
+
+</RelativeLayout>
